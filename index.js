@@ -45,7 +45,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Shree Leela Server Started");
+  res.send("Shree Leela Server Started and running");
 });
 
 app.use('/api', orders);
@@ -58,4 +58,4 @@ const root = require("path").join(__dirname, "./build");
 app.use(express.static(root));
 app.get("*", (req, res) => {
   res.sendFile("index.html", { root });
-});
+});c
