@@ -54,8 +54,3 @@ const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Shree Leela Server Started @ ${port}`);
 });
-const root = require("path").join(__dirname, "./build");
-app.use(express.static(root));
-app.get("*", (req, res) => {
-  res.sendFile("index.html", { root });
-});

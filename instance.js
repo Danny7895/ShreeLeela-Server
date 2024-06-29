@@ -1,8 +1,8 @@
 const Razorpay = require("razorpay");
 
 const instance = new Razorpay({
-  key_id: 'rzp_test_psYceEdF2V0TcX',
-  key_secret: 'nHTpCwOvwU3wPiRIG6S7yA3l',
+  key_id: 'rzp_live_XpW6z0n8yi0mQX',
+  key_secret: 'th5BY2I8IDTw6eaPIea0JXQO',
 });
 
 module.exports = instance;
